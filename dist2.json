@@ -1,0 +1,99 @@
+{
+"districts":[  
+	{"dist_code":1,
+	"dist_name":"Ariyalur"},
+	
+	{"dist_code":2,
+	"dist_name":"Chennai"},
+	
+	{"dist_code":3,
+	"dist_name":"Coimbatore"},
+	
+	{"dist_code":4,
+	"dist_name":"Cuddalore"},
+	
+	{"dist_code":5,
+	"dist_name":"Dharmapuri"},
+	
+	{"dist_code":6,
+	"dist_name":"Dindigul"},
+	
+	{"dist_code":7,
+	"dist_name":"Erode"},
+	
+	{"dist_code":8,
+	"dist_name":"Kanchipuram"},
+	
+	{"dist_code":9,
+	"dist_name":"Kanyakumari"},
+	
+	{"dist_code":10,
+	"dist_name":"Karur"},
+	
+	{"dist_code":11,
+	"dist_name":"Krishnagiri"},
+	
+	{"dist_code":12,
+	"dist_name":"Madurai"},
+	
+	{"dist_code":13,
+	"dist_name":"Nagapattinam"},
+	
+	{"dist_code":14,
+	"dist_name":"Namakkal"},
+	
+	{"dist_code":15,
+	"dist_name":"Nilgiris"},
+	
+	{"dist_code":16,
+	"dist_name":"Perambalur"},
+	
+	{"dist_code":17,
+	"dist_name":"Pudukkottai"},
+	
+	{"dist_code":18,
+	"dist_name":"Ramanathapuram"},
+	
+	{"dist_code":19,
+	"dist_name":"Salem"},
+	
+	{"dist_code":20,
+	"dist_name":"Sivaganga"},
+	
+	{"dist_code":21,
+	"dist_name":"Thanjavur"},
+	
+	{"dist_code":22,
+	"dist_name":"Theni"},
+	
+	{"dist_code":23,
+	"dist_name":"Thoothukudi (Tuticorin)"},
+	
+	{"dist_code":24,
+	"dist_name":"Tiruchirappalli"},
+	
+	{"dist_code":25,
+	"dist_name":"Tirunelveli"},
+	
+	{"dist_code":26,
+	"dist_name":"Tiruppur"},
+	
+	{"dist_code":27,
+	"dist_name":"Tiruvallur"},
+	
+	{"dist_code":28,
+	"dist_name":"Tiruvannamalai"},
+	
+	{"dist_code":29,
+	"dist_name":"Tiruvarur"},
+	
+	{"dist_code":30,
+	"dist_name":"Vellore"},
+	
+	{"dist_code":31,
+	"dist_name":"Viluppuram"},
+	
+	{"dist_code":32,
+	"dist_name":"Virudhunagar"}
+]
+}

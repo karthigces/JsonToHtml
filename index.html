@@ -1,0 +1,59 @@
+<!--developed by karthi & suriya Prakas-->
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<title>List of Tamilnadu Districts</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+.card, .card-header, .card-body, .card-footer{
+    border-radius:0px !important;
+}
+</style>
+<div class="card bg-primary text-white">
+    <div align="center" class="card-body"><big>Registration Form</big></div>
+</div>
+<br><br>
+<div class="container">
+	<form action="" method="POST" enctype="">
+		<div class="form-group">
+			<label for="exampleInputEmail1">Full Name</label>
+			<input type="text" name="full_name" class="form-control" id="exampleInputName" placeholder="Enter your full name">
+		</div>
+		<div class="form-group">
+			<label for="exampleInputEmail1">Address</label>
+			<textarea type="text" class="form-control" name="address"></textarea>
+		</div>
+		<div class="form-group">
+			<label for="exampleInputEmail1">City</label>
+			<span id="state"></span>
+		</div>
+		<button type="submit" class="btn btn-block btn-primary">Submit</button>
+	</form>
+</div>
+<script>
+var xmlhttp = new XMLHttpRequest();
+var url = "dist2.json";
+
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var myArr = JSON.parse(this.responseText);
+    myFunction(myArr);
+  }
+};
+
+xmlhttp.open("GET", url, true);
+xmlhttp.send();
+
+function myFunction(arr) {
+  var out = "<select class='form-control' name='dist'>";
+  var i;
+  for(i = 0; i < arr.districts.length; i++) {
+    out += '<option name="' + arr.districts[i].dist_code + '">' + 
+    arr.districts[i].dist_name + '</option>';
+  }
+  out += "</select>";
+  document.getElementById("state").innerHTML = out;
+}
+</script>
+<!--developed by karthi & suriya Prakas-->
