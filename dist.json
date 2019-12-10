@@ -1,3 +1,6 @@
+[
+{
+"TNDistricts":
 [  
 	{"dist_code":1,
 	"dist_name":"Ariyalur"},
@@ -94,4 +97,6 @@
 	
 	{"dist_code":32,
 	"dist_name":"Virudhunagar"}
+]
+}
 ]

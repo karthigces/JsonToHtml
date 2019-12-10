@@ -1,0 +1,54 @@
+<!--developed by karthi & suriya Prakas-->
+ <head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+ <title>List of Tamilnadu Districts</title>
+ <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+ <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+ <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ </head>
+ <style>
+ .card, .card-header, .card-body, .card-footer{ border-radius:0px !important; }
+ .ui-menu .ui-menu-item a{
+    background:red;
+    height:10px;
+    font-size:8px;
+}
+ </style>
+ <div class="card bg-primary text-white">
+ <div align="center" class="card-body"><big>Registration Form</big></div>
+ </div>
+ <br><br>
+ <div class="container">
+ <form action="mailto:natpukarthi@gmail.com" method="POST" enctype="">
+ <div class="form-group">
+ <label for="exampleInputEmail1">Full Name</label>
+ <input type="text" name="full_name" class="form-control" id="exampleInputName" placeholder="Enter your full name">
+ </div> <div class="form-group">
+ <label for="exampleInputEmail1">Address</label>
+ <textarea type="text" class="form-control" name="address"></textarea>
+ </div> <div class="form-group">
+ <label for="exampleInputEmail1">City</label></span>
+ </div>
+ <input type="text" class="form-control" id="NodeName"></p>
+ <div class="form-group" align="center">
+ <button align="center" type="submit" class="btn btn-primary">Submit</button>
+ </div>
+ </form>
+ </div>
+ <script>
+ //var nodeList='[{"TNDistricts":[{"dist_code":1,"dist_name":"Ariyalur"},{"dist_code":2,"dist_name":"Chennai"}]}]';
+ var obj = JSON.parse($.getJSON({'url': "dist.json", 'async': false}).responseText);
+ var List=[];
+ //var List2=[];
+ for(i=0;i<32;i++)
+ {
+ List[i]=obj[0].TNDistricts[i].dist_name;
+ //document.getElementById('NodeName').innerHTML=List[i];
+ //alert(List[i]);
+ //List2=["1","2","11","123"];
+ }
+ $('#NodeName').autocomplete({
+ source: List
+ });
+ </script>
